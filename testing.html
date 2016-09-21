@@ -133,6 +133,8 @@ Error message and password prompt
 
 <li>$:/state/showeditpreview</li>
 
+<li>$:/state/sidebar</li>
+
 <li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab-1749438307</li>
@@ -148,6 +150,14 @@ Error message and password prompt
 <li>$:/themes/tiddlywiki/vanilla</li>
 
 <li>$:/view</li>
+
+<li>20967</li>
+
+<li>21023</li>
+
+<li>21069</li>
+
+<li>21117</li>
 
 <li>Adam</li>
 
@@ -7854,13 +7864,16 @@ Error message and password prompt
 <div created="20160921195027589" modified="20160921195027589" title="$:/state/showeditpreview">
 <pre>yes</pre>
 </div>
+<div created="20160921202149668" modified="20160921204959827" title="$:/state/sidebar">
+<pre>yes</pre>
+</div>
 <div created="20160921195452545" modified="20160921195452545" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/StoryView</pre>
 </div>
 <div created="20160921195450991" modified="20160921195450991" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Appearance</pre>
 </div>
-<div created="20160921194833707" modified="20160921195312209" title="$:/state/tab/sidebar--1835078512">
+<div created="20160921194833707" modified="20160921202200103" title="$:/state/tab/sidebar--1835078512">
 <pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div list="[[Testing Assignments]]" title="$:/StoryList">
@@ -7992,25 +8005,48 @@ Error message and password prompt
 <div created="20160921195454059" modified="20160921195454059" title="$:/view">
 <pre>zoomin</pre>
 </div>
-<div created="20160921194136661" modified="20160921195511629" tags="[[Testing Assignments]]" title="Adam">
+<div created="20160921210259124" modified="20160921210412244" tags="bugs" title="20967">
+<pre>The first two tabs on the JZ work search record are displaying the same data. 
+
+report: &quot;work search record that somehow the Intro tab has the information that should be on the UI requirements tab. The intro information is completely missing. Also, the first tab does have the customer’s link to their work search plan but the UI tab does not.&quot;</pre>
+</div>
+<div created="20160921205930452" modified="20160921210022714" tags="bugs" title="21023">
+<pre>When a Work document (.doc) is selected Word is not opening - a browser window opens in the case of all 3 selections. Also if .pdf is selected the WSP opens in a browser.</pre>
+</div>
+<div created="20160921205359313" modified="20160921205450222" tags="bugs" title="21069">
+<pre>When the export button is selected on the search screen, http 404 not found error occurs.
+The webpage cannot be found</pre>
+</div>
+<div created="20160921205001332" modified="20160921205153696" tags="bugs" title="21117">
+<pre>When a search is conducted for multiple seeker IDs or multiple SSNs, the following error appears &quot;''Searching for customers using more than ole of the following fields is not allowed''&quot;</pre>
+</div>
+<div created="20160921194136661" modified="20160921210722523" tags="[[Testing Assignments]]" title="Adam">
 <pre>* Staff module list tab
 * Create and document complete records for 1st RESEA
 * Create and document complete record for 1st C3E customers
 * Conduct a Customer Search for the newly created records
 * Migrant/Seasonal Worker;
-* NYESS - Attached NYESS service and funded successfully. (O*NET on the service detail side is grayed out??). Tried to save without $1 funding received error message, working correctly. 
+* Search multiple seeker IDs with one in the top (ID1) field and others in the large text field below. See bug [[21117]]
+* Conduct a search and attempt to export the search results. See bug [[21069]]
+* Create Work Search Plan in OSOS
+* Export the Work Search Plan in each format. See bug [[21023]]
 </pre>
 </div>
-<div created="20160921194742760" modified="20160921200940237" tags="[[Testing Assignments]]" title="Brendan">
-<pre>!!Job Zone
+<div created="20160921194742760" modified="20160921211511883" tags="[[Testing Assignments]]" title="Brendan">
+<pre>!!OSOS
 
-* Test work search record – add employer contact and activity
+* Search multiple seeker IDs with one in the top (ID1) field and others in the large text field below. See bug [[21117]]
+* Conduct a search and attempt to export the search results. See bug [[21069]]
+
+!!Job Zone
+
+* View and test the tabs of the Work Search Record. See bug [[20967]]
+* Test work search record and adding an employer contact or activity
 * Create Job Scout
-* Conduct a keyword search (with or without an attached resume) (bug fix 20873)
-* Test Employability Score
+* Conduct a keyword search (with or without an attached resume) 
 * Create resume/work search record in JZ
 * Upload external resume/work search record
-* Conduct occupation search</pre>
+* Conduct a resume-based job match. Determine if the search results are relevant to the information provided on the resume.</pre>
 </div>
 <div created="20160921194202412" modified="20160921195612024" tags="[[Testing Assignments]]" title="Dan Brophy">
 <pre>!!Employer module  
@@ -8052,12 +8088,15 @@ Error message and password prompt
 
 Assist [[Michele]] and [[Dan Reohr]] with [[Testing Assignments]] where needed.</pre>
 </div>
-<div created="20160921194454412" modified="20160921200458040" tags="[[Testing Assignments]]" title="Jonathan Allen">
-<pre>!!Staff module 
+<div created="20160921194454412" modified="20160921205627020" tags="[[Testing Assignments]]" title="Jonathan Allen">
+<pre>* Search multiple seeker IDs with one in the top (ID1) field and others in the large text field below. See bug [[21117]]
+* Conduct a search and attempt to export the search results. See bug [[21069]]
+
+!!Staff module 
 
 * Inbox – delete messages
 * Messages tab
-* My Caseload tab (search caseload when job matching; see bug fix 20855)
+* My Caseload tab (search caseload when job matching
 
 !!Veterans
 
@@ -8070,7 +8109,7 @@ Assist [[Michele]] and [[Dan Reohr]] with [[Testing Assignments]] where needed.<
 * Verify that the fund eligibility edits have been implemented for Functionally Aligned services to allow for missing Selective Service information
 </pre>
 </div>
-<div created="20160921194703135" modified="20160921200656030" tags="[[Testing Assignments]]" title="Katlin">
+<div created="20160921194703135" modified="20160921211501276" tags="[[Testing Assignments]]" title="Katlin">
 <pre>!!Services tab
 
 * Set a next contact date and received the reminder in my staff inbox
@@ -8083,19 +8122,24 @@ Assist [[Michele]] and [[Dan Reohr]] with [[Testing Assignments]] where needed.<
 
 !!Job Zone
 
+* View and test the tabs of the Work Search Record. See bug [[20967]]
 * Test work search record and adding an employer contact or activity
 * Create Job Scout
-* Conduct a keyword search (with or without an attached resume) (bug fix 20873)
+* Conduct a keyword search (with or without an attached resume) 
 * Create resume/work search record in JZ
 * Upload external resume/work search record
+* Conduct a resume-based job match. Determine if the search results are relevant to the information provided on the resume.
+
 </pre>
 </div>
-<div created="20160921194714175" modified="20160921200829431" tags="[[Testing Assignments]]" title="Kerry">
+<div created="20160921194714175" modified="20160921210712904" tags="[[Testing Assignments]]" title="Kerry">
 <pre>!!Job Zone
 
 * Test that creation of OSOS record creates JZ record
 * Create JZ account and see if it creates an OSOS SS/IO record
 * Create Work Search Plan in OSOS
+* Export the Work Search Plan in each format. See bug [[21023]]
+* View and test the tabs of the Work Search Record. See bug [[20967]]
 </pre>
 </div>
 <div created="20160921194414951" modified="20160921200123849" tags="[[Testing Assignments]]" title="Michele">
@@ -8113,10 +8157,12 @@ Assist [[Michele]] and [[Dan Reohr]] with [[Testing Assignments]] where needed.<
 [[John Tully]] to assist where needed
 </pre>
 </div>
-<div created="20160921194756448" modified="20160921201039651" tags="[[Testing Assignments]]" title="Mike Barber">
+<div created="20160921194756448" modified="20160921205600414" tags="[[Testing Assignments]]" title="Mike Barber">
 <pre>* Trade Act
 * Dislocated Worker
 * Staff Module News Tab
+* Search multiple seeker IDs with one in the top (ID1) field and others in the large text field below. See bug [[21117]]
+* Conduct a search and attempt to export the search results. See bug [[21069]]
 
 !!Youth Customers
 
@@ -8129,20 +8175,28 @@ Assist [[Michele]] and [[Dan Reohr]] with [[Testing Assignments]] where needed.<
 * Youth Outcomes
 </pre>
 </div>
-<div created="20160921194727120" modified="20160921200933402" tags="[[Testing Assignments]]" title="Poul">
-<pre>!!Job Zone
+<div created="20160921194727120" modified="20160921211526715" tags="[[Testing Assignments]]" title="Poul">
+<pre>!!OSOS
 
-* Test work search record – add employer contact and activity
+* Search multiple seeker IDs with one in the top (ID1) field and others in the large text field below. See bug [[21117]]
+* Conduct a search and attempt to export the search results. See bug [[21069]]
+
+
+!!Job Zone
+
+* View and test the tabs of the Work Search Record. See bug [[20967]]
+* Test work search record and adding an employer contact or activity
 * Create Job Scout
-* Conduct a keyword search (with or without an attached resume) (bug fix 20873)
-* Test Employability Score
+* Conduct a keyword search (with or without an attached resume) 
 * Create resume/work search record in JZ
 * Upload external resume/work search record
-* Conduct occupation search
+* Conduct a resume-based job match. Determine if the search results are relevant to the information provided on the resume.
 </pre>
 </div>
-<div created="20160921194053304" modified="20160921195330427" title="Testing Assignments">
-<pre>Click on your name for your testing assignment:
+<div created="20160921194053304" modified="20160921210200999" title="Testing Assignments">
+<pre>OSOS Version 6.5.06 has been installed in OSOS Test https://osostest/osos.html (open or copy/paste into IE)
+
+Click on your name for your testing assignment:
 
 &lt;$list filter=&quot;[tag[Testing Assignments]]&quot;&gt;
 </pre>
